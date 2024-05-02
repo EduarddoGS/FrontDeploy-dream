@@ -1,0 +1,37 @@
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Contenedor-pasos{
+    width: 300px;
+    
+    display: flex;
+    background: var(--color-background-boxes1);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slide-up 2.1s ease-in-out;
+    box-shadow: var(--color-boxShadow);
+    padding: 8px 0;
+}
+
+.img-contenedor{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-background-boxes2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contenedor img{
+    width: 23px;
+}

@@ -1,0 +1,98 @@
+.dispositivos-Container{
+    width: 100%;
+    max-height: 130px;
+    background: var(--color-background-boxes1);
+    color: var(--color-texto-boxes);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    animation: slide-up 0.7s ease forwards;
+    opacity: 0;
+    box-shadow: var(--color-boxShadow);
+}
+
+.dispositivos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.dispositivos::-webkit-scrollbar {
+    width: 7px; /* Ancho del scrollbar */
+    
+}
+
+/* Estilizar la pista del scrollbar */
+.dispositivos::-webkit-scrollbar-track {
+    background: var(--scroll-back); /* Color de fondo de la pista */
+    border-radius: 5px;
+    
+}
+
+/* Estilizar el thumb del scrollbar */
+.dispositivos::-webkit-scrollbar-thumb {
+    background: var(--scroll-front); /* Color del thumb */
+    border-radius: 4px; /* Bordes redondeados */
+    
+}
+
+/* Cambiar el color del thumb cuando se pasa el mouse sobre él */
+.dispositivos::-webkit-scrollbar-thumb:hover {
+    background: #042F84;
+}
+
+.dispositivo-container{
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--color-background-boxes2);
+    padding: 5px;
+    margin:  5px;
+}
+
+
+
+.incremento-container{
+    display: flex;
+}
+
+.incremento-container button{
+    width: 22px;
+    height: 22px;
+    background-color: var(--color-button-boxes2);
+    color: var(--color-texto-boxes);
+    font-weight: 500;
+    border-radius: 3px;
+    border: 0;
+}
+
+.incremento-container p{
+    width: 25px;
+    height: 22px;
+    margin: 0 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.dispositivo-container img{
+    width: 50px;
+    height: 40px;
+    margin: 7px 0;
+}
+
+.dispositivo-nombre{
+    font-weight: 100;
+    font-size: 14px;
+}

@@ -1,0 +1,367 @@
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .ContenedorTotal{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+  
+  .Contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 1s forwards;
+  }
+
+  @media(min-height: 850px){
+    .Contenedor {
+      max-height: 400px;
+      overflow-y: scroll;
+    }
+  
+  }
+
+  
+  @media(max-width: 800px) and (max-height: 849px){
+    .Contenedor {
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+  
+  }
+
+.All-contenedor{
+    width:100%;
+    position: relative;
+}
+
+.titulo{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    animation: slide-up 0.7s ease forwards;
+    color: var(--color-texto-titulo);
+}
+
+@media (max-width: 440px){
+  .titulo{
+    font-size: 1rem;
+
+}
+}
+
+.calendar-container{
+  width: 100%;
+  
+  
+}
+
+
+.reserva-info{
+  width: 100%;
+}
+
+
+.apartado1{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reserva-date{
+  width: 32%;
+  min-width: 140px;
+  height: 30px;
+  background: var(--color-background-boxes1);
+  border-radius: 10px;
+  color: var(--color-texto-boxes);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  animation: slide-up 0.7s ease forwards;
+  opacity: 0;
+  box-shadow: var(--color-boxShadow);
+}
+
+.reserva-sala{
+  width: 32%;
+  min-width: 140px;
+  height: 30px;
+  background: var(--color-background-boxes1);
+  border-radius: 10px;
+  color: var(--color-texto-boxes);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom:0;
+  box-shadow: var(--color-boxShadow);
+}
+
+.reserva-hora{
+  width: 32%;
+  min-width: 140px;
+  height: 30px;
+  background: var(--color-background-boxes1);
+  border-radius: 10px;
+  color: var(--color-texto-boxes);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  animation: slide-up 0.7s ease forwards;
+  box-shadow: var(--color-boxShadow);
+}
+
+
+
+.horario-container{
+  animation: slide-up 0.7s ease forwards;
+  opacity: 0;
+}
+
+.apartado2{
+  display: flex;
+}
+
+.apartado21{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.dispositivos-sala{
+  width: 100%;
+  animation: slide-up 0.7s ease forwards;
+  opacity: 0;
+}
+
+.dispositivo-component{
+  width: 100%;
+  animation: slide-up 0.7s ease forwards;
+  opacity: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+
+.dispositivo-component .dispositivo-container{
+  height: 80px;
+  
+}
+
+
+.dispositivo-component .dispositivos-Container{
+  height: 110px;
+}
+
+.dispositivo-component img{
+  width: 45px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.dispositivo-component p{
+  width: 20px;
+  height: 18px;
+  
+}
+
+.proyecto-container{
+  width: 100%;
+  animation: slide-up 0.5s ease forwards;
+  opacity: 0;
+}
+
+.reserva-creada{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  width: 100%;
+  height: 102%;
+  top:0;
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+ 
+}
+
+/* Define vars we'll be using */
+:root {
+  --brand-success: #5cb85c;
+  --loader-size: 7em;
+  --check-height: calc(var(--loader-size) / 2);
+  --check-width: calc(var(--check-height) / 2);
+  --check-left: calc((var(--loader-size) / 6) + (var(--loader-size) / 12));
+  --check-thickness: 3px;
+  --check-color: var(--brand-success);
+}
+
+.circle-loader {
+  margin-bottom: calc(var(--loader-size) / 2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: var(--check-color);
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: var(--loader-size);
+  height: var(--loader-size);
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: var(--check-color);
+  transition: border 500ms ease-out;
+}
+
+.checkmark {
+  display: none;
+}
+
+.checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+
+.checkmark:after {
+  opacity: 1;
+  height: var(--check-height);
+  width: var(--check-width);
+  transform-origin: left top;
+  border-right: var(--check-thickness) solid var(--check-color);
+  border-top: var(--check-thickness) solid var(--check-color);
+  content: '';
+  left: var(--check-left);
+  top: var(--check-height);
+  position: absolute;
+}
+
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: var(--check-width);
+    opacity: 1;
+  }
+  40% {
+    height: var(--check-height);
+    width: var(--check-width);
+    opacity: 1;
+  }
+  100% {
+    height: var(--check-height);
+    width: var(--check-width);
+    opacity: 1;
+  }
+}
+
+.btn-listo{
+  background-color: red;
+}
+
+#ir-reservas {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ir-reservas h2{
+  color:  #0a0a3f;
+  font-weight: 300;
+}
+
+#ir-reservas  button{
+  border: 0;
+  height: 45px;
+  width: 170px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); 
+  margin-top: 30px;
+}
+
+.buttonContenedor{
+
+  position: absolute;
+
+}
+
+#aceptar-button-calendar button{
+  border: 0;
+  height: 50px;
+  width: 250px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  background: linear-gradient(to top, #11113A, #1E1E5B);
+  border-radius: 10px;
+  color: var(--color-texto-boxes);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 92%;
+}
+
+
+
+@media(min-height: 850px){
+  #aceptar-button-calendar button{
+    top: 104%;
+  }
+}
+
+@media(max-height: 849px){
+  #aceptar-button-calendar button{
+    top: 93%;
+  }
+}
+

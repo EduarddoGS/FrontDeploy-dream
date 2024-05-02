@@ -1,0 +1,156 @@
+.proyectoreserva{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--color-background-boxes1);
+
+    padding: 15px 0px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: var(--color-boxShadow);
+}
+
+.proyectoreserva h4{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.proyecto{
+    width: 50%;
+    padding: 0 15px;
+    color: var(--color-texto-boxes);
+}
+
+.proyecto select{
+    width: 100%;
+    background-color: var(--color-background-boxes2);
+    border: 0;
+   
+    color: var(--color-texto-boxes);
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.proyectoInput{
+    width: 100%;
+    background-color: var(--color-background-boxes2);
+    border-radius: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.integrantes{
+    width: 50%;
+    padding: 0 15px;
+    color: var(--color-texto-boxes);
+}
+
+.inputs{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-background-boxes2);
+    border-radius: 10px;
+}
+
+.inputs input{
+    width: 90%;
+    border: 0;
+    background-color: transparent;
+    color: var(--color-texto-boxes);
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.inputs button{
+    width: 20px;
+    background-color:  var(--color-button-boxes3);
+    border-radius: 50%;
+    border: 0;
+    max-height: 30px;
+    font-style: bold;
+    font-size: 1rem;
+    color: var(--color-texto-boxes);
+    
+}
+
+.integrantes-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 100%;
+    height: 85px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--color-background-boxes2);
+}
+
+.integrante{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    height: 30px;
+    background-color: var(--color-background-boxes3) ;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 0.75rem;
+}
+
+.integrante p{
+    width: 90%;
+}
+
+.integrante button{
+    width: 15px;
+    height: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: var(--color-button-boxes3);
+    color: var(--color-texto-boxes);
+    border-radius: 50%;
+    border: 0;
+}
+
+option{
+    background-color: rgba(67, 110, 189, 1) ; 
+}
+
+.integrantes-scroll{
+    overflow-y: scroll;
+}
+
+.integrantes-scroll::-webkit-scrollbar {
+    width: 5px; /* Ancho del scrollbar */
+    
+}
+
+/* Estilizar la pista del scrollbar */
+.integrantes-scroll::-webkit-scrollbar-track {
+    background: var(--scroll-back); /* Color de fondo de la pista */
+    border-radius: 5px;
+    
+}
+
+/* Estilizar el thumb del scrollbar */
+.integrantes-scroll::-webkit-scrollbar-thumb {
+    background: var(--scroll-front); /* Color del thumb */
+    border-radius: 4px; /* Bordes redondeados */
+    
+}
+
+/* Cambiar el color del thumb cuando se pasa el mouse sobre él */
+.integrantes-scroll::-webkit-scrollbar-thumb:hover {
+    background: #042F84;
+}

@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--color-background);
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+  background-position: center; 
+  font-family: 'Roboto', sans-serif;
+
+}
+
+:root{
+  --color-texto-titulo: #0a0a3f;
+  --color-texto-boxes: white;
+  --color-background: #EFEFEF;
+  --color-background-boxes1: linear-gradient(to top, #11113A, #1E1E5B);
+  --color-background-boxes2: rgb(43, 104, 218, 0.55);
+  --color-background-boxes3: rgba(67, 110, 189, 0.6);
+  --color-button-boxes2: rgb(55, 124, 228, 0.8);
+  --color-button-boxes3: rgb(55, 124, 228, 1);
+  --color-boxShadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  --font: 'Roboto';
+  --scroll-back: rgba(53, 100, 172);
+  --scroll-front: #0f40a1;
+}
